@@ -7,6 +7,8 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="KeptIT.View.Admin"
     mc:Ignorable="d">
+    
+    
 
     <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
                CompactPaneLength="50" OpenPaneLength="160">
@@ -74,6 +76,24 @@
                 </Grid>
             </SplitView>
             <Image HorizontalAlignment="Right" Source="images/ledreborg_logo.png" Height="120" VerticalAlignment="Top" Width="auto" Margin="0,0,7,0"/>
+            <Pivot Title="" Margin="0,12,0,0">
+                <PivotItem Header="Løn" >
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Løn" VerticalAlignment="Top"/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Opgaver">
+                    
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Opgaver" VerticalAlignment="Top"/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Greenkeeper">
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Greenkeeper" VerticalAlignment="Top"/>
+                    </Grid>
+                </PivotItem>
+            </Pivot>
 
         </Grid>
     </SplitView>
