@@ -7,8 +7,8 @@
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="KeptIT.View.Admin"
     mc:Ignorable="d">
-    
-    
+
+
 
     <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
                CompactPaneLength="50" OpenPaneLength="160">
@@ -75,7 +75,7 @@
                     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="KeptIT" VerticalAlignment="Center" Foreground="White"/>
                 </Grid>
             </SplitView>
-            <Image HorizontalAlignment="Right" Source="images/ledreborg_logo.png" Height="120" VerticalAlignment="Top" Width="auto" Margin="0,0,7,0"/>
+            <Image HorizontalAlignment="Right" Source="\images\ledreborg_logo.png" Height="120" VerticalAlignment="Top" Width="auto" Margin="0,0,7,0"/>
             <Pivot Title="" Margin="0,12,0,0">
                 <PivotItem Header="Løn" >
                     <Grid>
@@ -83,14 +83,57 @@
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Opgaver">
-                    
+
                     <Grid>
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Opgaver" VerticalAlignment="Top"/>
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Greenkeeper">
+                   
+                    <Border Name="border" BorderBrush="Black" BorderThickness="1"
+          Padding="5" Margin="5">
+                        <Grid Height="Auto" Width="420
+                                  " HorizontalAlignment="Left">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="8*" />
+                                <ColumnDefinition Width="27*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Navn:" Grid.ColumnSpan="2" Margin="0,0,235,0" />
+                            <TextBox x:Name="navn" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+                            
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="" Grid.ColumnSpan="2" Margin="0,0,235,0"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="" />
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Telefon:" Grid.ColumnSpan="2" Margin="0,0,235,0" />
+                            <TextBox x:Name="telefon" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="144" VerticalAlignment="Bottom"/>
+                            
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="" Grid.ColumnSpan="2" Margin="0,0,235,0"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text=""/>
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="" Grid.ColumnSpan="2" Margin="0,0,235,0"/>
+                            <Button x:Name="gembtn" Grid.Row="4" Grid.Column="1" Content="Gem" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="147"/>
+
+                            <ListView HorizontalAlignment="Right" VerticalAlignment="Top" BorderThickness="1" ></ListView>
+
+                        </Grid>
+                    </Border>
+
+
+                </PivotItem>
+                <PivotItem Header="Opgave">
                     <Grid>
-                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Greenkeeper" VerticalAlignment="Top"/>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Opgave" VerticalAlignment="Top"/>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Område">
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Område" VerticalAlignment="Top"/>
+
                     </Grid>
                 </PivotItem>
             </Pivot>

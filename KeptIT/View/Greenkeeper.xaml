@@ -76,8 +76,8 @@
                     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="KeptIT" VerticalAlignment="Center" Foreground="White"/>
                 </Grid>
             </SplitView>
-            <Image HorizontalAlignment="Right" Source="images/ledreborg_logo.png" Height="120" VerticalAlignment="Top" Width="auto" Margin="0,0,7,0"/>
-
+            <Image HorizontalAlignment="Right" Source="\images\ledreborg_logo.png" Height="120" VerticalAlignment="Top" Width="auto" Margin="0,0,7,0"/>
+           
         </Grid>
     </SplitView>
 </Page>
